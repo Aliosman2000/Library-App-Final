@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Profile_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kayit">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#461414"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="407dp"
+            android:layout_height="727dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:layout_weight="1"
+                android:hint="Ad"
+                android:padding="7dp"
+                android:inputType="text"
+                android:textAllCaps="false"
+                android:textColorHint="#FDFCFC" />
+
+            <EditText
+                android:id="@+id/soyad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:padding="7dp"
+                android:hint="Soyad"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textAllCaps="false"
+                android:textColorHint="#FDFCFC" />
+
+            <EditText
+                android:id="@+id/eposta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:padding="7dp"
+                android:hint="E-Posta"
+                android:inputType="text"
+                android:textAllCaps="false"
+                android:textColorHint="#FDFCFC" />
+
+            <EditText
+                android:id="@+id/kullaniciadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:padding="7dp"
+                android:hint="Kullanıcı Adı"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textAllCaps="false"
+                android:textColorHint="#FDFCFC" />
+
+            <EditText
+                android:id="@+id/sifre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="Şifre"
+                android:inputType="textPassword"
+                android:textColor="#E2DDDD"
+                android:textColorHint="#E9E8E8" />
+
+            <EditText
+                android:id="@+id/sifretekrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="Şifre Tekrar"
+                android:inputType="textPassword"
+                android:password="true"
+                android:textColor="#E2DDDD"
+                android:textColorHint="#E9E8E8" />
+
+            <CheckBox
+                android:id="@+id/hizmetsartlaricheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hizmet Şartlarını Kabul Ediyorum"
+                android:textAllCaps="true"
+                android:textColor="#F6F2F2"/>
+
+            <Button
+                android:id="@+id/kaydolButonu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buton_sekli"
+                android:onClick="kayittamamlama"
+                android:text="Kayıt"
+                android:textAllCaps="true"
+                android:textColor="#EFECEC"
+                android:textColorLink="#5617C7"
+                android:textSize="20sp"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

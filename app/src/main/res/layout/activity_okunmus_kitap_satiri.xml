@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:background="#2E2E2E"> <!-- Arka plan rengini ana layout ile uyumlu hale getirdim -->
+
+    <!-- Kitap Adı -->
+    <TextView
+        android:id="@+id/kitap_adi_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Kitap Adı Placeholder" />
+
+    <!-- Yazar Adı -->
+    <TextView
+        android:id="@+id/yazar_adi_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#B0B0B0"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/kitap_adi_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Yazar Adı Placeholder" />
+
+    <!-- Kategori -->
+    <TextView
+        android:id="@+id/kategori_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#B0B0B0"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/yazar_adi_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Kategori Placeholder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

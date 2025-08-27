@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uye_yon_guncelleme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#461414"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".Uye_yonetimi_uye_guncelleme">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Üye Güncelleme"
+        android:textColor="#EBE7E7"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Adı"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+    <EditText
+        android:id="@+id/etSoyadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Soyadı"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+    <EditText
+        android:id="@+id/etEposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="E-Posta"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+    <EditText
+        android:id="@+id/etSifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:password="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+    <EditText
+        android:id="@+id/etUyeNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Üye No"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+    <EditText
+        android:id="@+id/etRol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Rol"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+    <Button
+        android:id="@+id/btnGuncelle"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:background="@drawable/buton_sekli"
+        android:text="Güncelle"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Profile_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#461414"
+    tools:context=".Kitap_Ekle_Activity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#461414"
+        android:gravity="center"
+        android:text="Kitap Ekleme Ekranı"
+        android:textColor="#F6F5F5"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="600dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/kitapeklee"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/buton_sekli"
+            android:onClick="btnKitapEkleİc"
+            android:text="Kitap Ekle"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="OnClick" />
+
+        <EditText
+            android:id="@+id/kitapisim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:hint="Kitap İsmi"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="#E9E6E6"
+            android:textColorHint="#DBD8D8"
+            android:textSize="24sp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/yazarisim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Yazar İsmi"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="#E9E6E6"
+            android:textColorHint="#DBD8D8"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/kitapeklee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kitapisim"
+            app:layout_constraintVertical_bias="0.498"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Kategori"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="#E9E6E6"
+            android:textColorHint="#DBD8D8"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/kitapeklee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/kitapisim"
+            app:layout_constraintVertical_bias="0.264"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/ısbn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ISBN"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="#E9E6E6"
+            android:textColorHint="#DBD8D8"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/kitapeklee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.882"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/UyeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Üye ID"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/KitapId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kitap ID"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/OduncTarihi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ödünç Tarihi"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/IadeTarihi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İade Tarihi"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/IadeKontrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İade Durumu"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

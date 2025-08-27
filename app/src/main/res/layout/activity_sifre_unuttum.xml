@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Profile_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F1717"
+    tools:context=".Sifre_Unuttum">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#461414"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/Eposta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="272dp"
+            android:background="#461414"
+            android:ems="10"
+            android:hint="Lütfen E-posta Girin"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:textColor="#F6F4F4"
+            android:textColorHint="#E9DFDF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="Şifremi Unuttum"
+            android:textColor="#F4EAEA"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/KullaniciAdiSu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="416dp"
+            android:background="#461414"
+            android:ems="10"
+            android:hint="Lütfen Kullanıcı Adı Girin"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:textColor="#F2EBEB"
+            android:textColorHint="#E9DFDF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnGonder"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buton_sekli"
+            android:text="Gönder"
+            android:onClick="GonderSifre"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="OnClick" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

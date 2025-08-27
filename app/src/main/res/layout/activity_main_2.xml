@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Profile_root_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#461414"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#461414"
+        android:text="Hoşgeldiniz"
+        android:textColor="#F2F2F2"
+        android:textColorLink="#E2DBDB"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="300dp"
+        android:layout_height="127dp"
+        android:layout_marginLeft="1dp"
+        android:background="#DFD4D4"
+        android:duplicateParentState="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/Kullanici"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#E8E8E8"
+            android:hint="Kullanıcı Adı"
+            android:inputType="text"
+            android:paddingLeft="7dp"
+            android:textColor="#000000"
+            android:textColorHint="#A0A0A0"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="483dp" />
+
+        <EditText
+            android:id="@+id/Sifree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#E8E8E8"
+            android:hint="Şifre"
+            android:inputType="text"
+            android:paddingLeft="7dp"
+            android:password="true"
+            android:textColor=" #000000"
+            android:textColorHint="#A0A0A0"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonGiris"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/buton_sekli"
+        android:text="Giriş Yap"
+        android:onClick="btngiris"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/buttoSUnut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:onClick="btnsunut"
+        android:text="Şifremi Unuttum"
+        android:textAllCaps="true"
+        android:textColorLink="#F6F4F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnKaydol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="292dp"
+        android:background="@android:color/transparent"
+        android:onClick="kayidoll"
+        android:text="Kaydol"
+        android:textAllCaps="true"
+        android:textColorLink="#F1EFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="OnClick" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
