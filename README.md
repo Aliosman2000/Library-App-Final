@@ -1,4 +1,9 @@
-Kütüphane Yönetim Sistemi
+Kullanıcı girişi için kullanici adi : aliyilmaz şifre : 12345
+Admin Girişi için kullanici adi : aysedemir şifre : 5678
+
+
+KÜTÜPHANE YÖNETİM SİSTEMİ
+
 Bu proje, kütüphane kaynaklarını ve kullanıcılarını çok rollü bir sistem aracılığıyla yönetmek için tasarlanmış kapsamlı bir Android uygulamasıdır. Hem yöneticiler hem de normal kullanıcılar için farklı erişim seviyeleri sağlayarak, güvenli kullanıcı kimlik doğrulaması, rol tabanlı yetkilendirme ve yerel bir Oda Veritabanı kullanarak güçlü veri yönetimi özellikleri sunar.
 
 Temel Özellikler
